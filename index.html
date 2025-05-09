@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <title>Eliã Silva</title>
+    
+</head>
+<body>
+    <header class="header-content">
+        <div class="myprofile">
+            <img src=".\img\profile.jpg" alt="">
+            <h2><a href="#home">Eliã Silva</a></h2>
+        </div>
+        <div id="menu-icon-mobile">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <nav class="nav-header">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-mobile">
+            <div id="close-button" >
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            
+            <ul class="mobile-list">
+                <li onclick="closeOnClick()">
+                    <a  class="mobile-item" href="#home">Home</a>
+                </li>
+                <li onclick="closeOnClick()" >
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li onclick="closeOnClick()" >
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li onclick="closeOnClick()" >
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-container">
+        <section id="home">
+            <div class="impact-home">
+                <h1>
+                   Eliã Silva<br>Desenvolvedor Full stack 
+                </h1>
+                <p>
+                    Sou um densenvolvedor full stack em formação, tenho me dedicado ao estudo de linguagens como Java, python, HMTL, CSS, JavaScript e ao framework React,<br>aplicando esses conhecimentos em projetos pessoais que reforçam minha prática e evolução constante.
+                </p>
+                <a href="#projects" class="default-button">Projetos</a>
+            </div>
+            <div id="social-midias">
+                <ul>    
+                    <li>
+                        <a href="https://github.com/Elian-8405" target="_blank">
+                            <img src=".\icons\github.png" alt="Icone do github em preto e branco" srcset="" target = "_blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/eli%C3%A3-silva/" target="_blank">
+                            <img src=".\icons\linkedin.png" alt="Icone do linkedin em pretro e branco" srcset="" target="_blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><img src=".\icons\instagram.png" alt="Icone do Intagram em preto e branco" srcset=""></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre-space">
+            <h1>Sobre</h1>
+            
+
+            <div class="know-skils_content">
+                <div class="know-me">
+                    <h3>Um pouco sobre min</h3>
+                    <p>
+                        Olá! Meu nome é Eliã e sou estudante de Ciência da Computação. 
+                    </p>
+                    <p>
+                        Durante meu curso, adquiri experiência com diversas linguagens de programação, 
+                        incluindo Python, Java, JavaScript, entre outras.
+                    </p>
+                    <p>
+                        Estou em busca de oportunidades na área de desenvolvimento web. Tenho conhecimento sólido em HTML, CSS, JavaScript, Java e Python, veja algumas aplicações dessas skils na seção de <a id="know-me-link-proj" href="#projects"><Strong>projetos</Strong></a>.
+                    </p>
+                    <p>
+                        Estou sempre aberto a novos desafios e ansioso para contribuir com soluções inovadoras e eficientes.
+                    </p>
+                    <a class="contact-button" href="#contact">Contato</a>
+                </div>
+                <div class="skils">
+                    <h3>Habilidades</h3>
+                    <div class="skils-content">
+                        <div class="skils-card">
+                           
+                            HTML
+                        </div>
+                        <div class="skils-card">
+                            
+                            CSS
+                        </div>
+                        <div class="skils-card">
+                            
+                            JavaScript
+                        </div>
+                        <div class="skils-card">
+                           
+                            Java
+                        </div>
+                        <div class="skils-card">
+                            Git
+                        </div>     
+                        <div class="skils-card">
+                            Python
+                        </div>
+                        <div class="skils-card">
+                            React
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="proj-space">
+            <h1>Projetos</h1>
+            <p id="text-apresentation"> Confira alguns de meus projetos pessoais</p>
+            <div class="projects-content">
+                <div class="project-row">
+                    <div class="project-img">
+                        <img src=".\img\notebook.png" alt="Notebook com imagens descritivas do projeto" srcset="">
+                    </div>
+                    <div class="project-details">
+                        <h2>Nome do projeto</h1>
+                        <p>Texto descritivo do projeto 
+                            estou escrevendo aqui somente para
+                            completar conteudo.
+                        </p>
+                        <button id="bott-details" > Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contato</h1>
+                <form action="" class="form-container" id="contact-form">
+                    <div class="input_form">
+                        <label for="user-name">Nome</label>
+                        <input type="text" name="name" id="user-name" placeholder="Digite seu nome" required >
+                    </div>
+                    <div class="input_form">
+                        <label for="user-email">Email</label>
+                        <input type="email" name="useremail" id="user-email" placeholder="Digite seu E-mail" required>
+                    </div>
+                    <div class="input_form">
+                        <label for="user-mensage">Mensagem</label>
+                        <textarea name="message" id="user-mensage" rows="5" placeholder="Digite a mensagem" required="true"></textarea>
+                    </div>
+                    <div class="bottom-form">
+                        <button type="submit" id="submit-button">Enviar</button>
+                    </div> 
+                </form>   
+                
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-info">
+                <h2>
+                    Eliã Ribeiro
+                </h2>
+                <p>
+                    Desenvolvedor full stack
+                </p>
+            </div>
+            <div class="soical-content">
+                <h2>Social</h2>
+                <div id="midia-content">
+                    <a href="https://github.com/Elian-8405" target="_blank" > <i class="fa-brands fa-github" ></i></a>
+                    <a href="https://www.linkedin.com/in/eli%C3%A3-silva/" target="_blank"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>   
+                </div>
+            </div>  
+        </div>
+        <hr>
+        <h4>&copy; Eliã Ribeiro 2025</h4>
+    </footer>
+    <script src=".\script.js"></script>
+    <script src=".\form.js"></script>
+</body>
+</html>
