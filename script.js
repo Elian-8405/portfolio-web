@@ -2,7 +2,8 @@ const menuButton = document.getElementById('menu-icon-mobile');
 const sideMenu = document.querySelector(".nav-mobile");
 const closeButton = document.getElementById('close-button');
 
-
+const skilCard = document.getElementsByClassName('skils-card');
+const iconSkill = document.querySelectorAll(".skil-icon");
 
 
 
@@ -38,6 +39,27 @@ function closeOnClick(){
 
 
 
+// Animação de mostrar e aparecer o icone
 
+for(let i = 0; i < skilCard.length; i++){
+    skilCard[i].addEventListener('mouseenter', () => {
+        
+        console.log("Estou nesse index:" + i)
+        console.log("Teste");
 
+        if(window.getComputedStyle(iconSkill[i]).display === 'none'){
+            iconSkill[i].style.display = 'flex';
+
+        }
+        skilCard[i].addEventListener('mouseout', () => {
+            
+            if(iconSkill[i].style.display === 'flex'){
+                setTimeout(() => {
+                    iconSkill[i].style.display = 'none';    
+                }, 800);
+                
+            }
+        })   
+    })
+}
 
